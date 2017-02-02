@@ -1,6 +1,6 @@
-import commands
 import argparse
 import os
+import subprocess
 
 LIST_FILE = 'list.txt'
 FOLDER='apks'
@@ -26,12 +26,10 @@ def DownloadApks():
     for pkg in package_list:
         cmd = DOWNLOAD_CMD + pkg
         print cmd
-        status, result = commands.getstatusoutput(cmd)
-        print result
+        subprocess.call(cmd.split())
 
 def UpdateApks():
-    status, result = commands.getstatusoutput(UPDATE_CMD)
-    print result
+    subprocess.call(UPDATE_CMD.split())
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Download listed Apks from the google play.')
