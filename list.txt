@@ -1,0 +1,26 @@
+# wechat
+com.tencent.mm
+# what's app
+com.whatsapp
+# telegram
+org.telegram.messenger
+# viber
+com.viber.voip
+# line
+jp.naver.line.android
+# fb messenger
+com.facebook.orca
+# fb
+com.facebook.katana
+# google messenger
+com.google.android.apps.messaging
+# instagram
+com.instagram.android
+# twitter
+com.twitter.android
+# snapchat
+com.snapchat.android
+# weibo international
+com.weico.international
+# sina weibo
+com.sina.weibo
