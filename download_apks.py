@@ -1,10 +1,15 @@
 import commands
 import argparse
+import os
 
 LIST_FILE = 'list.txt'
 FOLDER='apks'
 DOWNLOAD_CMD = 'gplaycli -v -f ' + FOLDER + ' -d '
 UPDATE_CMD = 'gplaycli -v -u ' + FOLDER
+
+def CheckEnv():
+    if not os.path.isdir(FOLDER):
+        os.makedirs(FOLDER)
 
 def DownloadApks():
     package_list = list()
@@ -32,6 +37,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Download listed Apks from the google play.')
     parser.add_argument('-u', dest='update', action='store_true', default=False, help='update apk')
     args = parser.parse_args()
+
+    CheckEnv()
 
     if args.update:
         UpdateApks()
