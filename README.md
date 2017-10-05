@@ -13,8 +13,8 @@ optional arguments:
 
 # Mac install
 ```shell
-# install gplaycli
-pip install gplaycli
+# install gplaycli and other requirements
+pip install -r requirements.txt
 ```
 
 then modify ssl cert file name from /usr/local/lib/python2.7/site-packages/ext_libs//googleplay_api/googleplay.py
