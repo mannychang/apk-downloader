@@ -1,7 +1,7 @@
 androguard==3.0.1
 args==0.1.0
 asn1crypto==0.23.0
-certifi==2017.7.27.1
+certifi==2022.12.7
 cffi==1.11.1
 chardet==3.0.4
 clint==0.5.1
